@@ -1,0 +1,113 @@
+:root {
+  --bg-color: #000000;
+  --website-name-color: #ffffff;
+  --header-offer-color: #000000;
+  --nav-font-color: #ffffff;
+  --nav-btn-color: #333333;
+  --nav-btnbg-color: #ffffff;
+  --header-blackbtn-color: #ffffff;
+  --header-whitebtn-color: #000000;
+  --header-data-color: #333333;
+  --header-datap-color: #828282;
+  --header-mainbg-color: #ffffff;
+  --header-mainp-color: #e0e0e0;
+  --gtk-title-color: #f2f2f2;
+  --gtk-paragraph-color: #bdbdbd;
+  --gtk-number-color: #f2f2f2;
+  --gtk-numberp-color: #bdbdbd;
+  --pprn-title-color: #f2f2f2;
+  --pprn-maininfo-color: #333333;
+  --pprn-pinfo-color: #828282;
+  --pprn-btn-font-color: #ffffff;
+  --pprn-btn-color: #000000;
+  --build-title-color: #f2f2f2;
+  --build-img-color: #f2f2f2;
+  --build-imgp-color: #e0e0e0;
+  --opinion-title-color: #f2f2f2;
+  --opinion-name-color: #f2f2f2;
+  --opinion-paragraph-color: #e0e0e0;
+  --newsletter-title-color: #000000;
+  --newsletter-p-color: #000000;
+  --newsletter-input-color: #e0e0e0;
+  --newsletter-subscribe-color: #333333;
+  --newsletter-btn-color: #ffffff;
+  --newsletter-color: #ffffff;
+  --footer-title-color: #f2f2f2;
+  --footer-p-color: #bdbdbd;
+  --main-font-color: #f2f2f2;
+  --main-paragraph-color: #bdbdbd;
+  --font-family: "Mada", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-color);
+  font-family: var(--font-family);
+  overflow: hidden;
+}
+
+.header-section {
+  display: flex;
+}
+
+.website-name {
+  font-size: 24px;
+  font-weight: normal;
+  padding-left: 100px;
+  padding-top: 48px;
+}
+
+.website-name a {
+  color: var(--website-name-color);
+  text-decoration: none;
+}
+
+.nav-section {
+  display: inline-block;
+  position: absolute;
+  top: 54px;
+  right: 100px;
+}
+
+.nav__list {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  list-style: none;
+}
+
+.nav__list-element a {
+  width: 120px;
+  height: 48px;
+  font-size: 18px;
+  font-weight: normal;
+  color: var(--nav-font-color);
+  padding: 10px;
+  text-decoration: none;
+  text-align: center;
+
+  &:focus,
+  &:hover {
+    cursor: pointer;
+    color: var(--nav-btn-color);
+    background-color: var(--nav-btnbg-color);
+    border-radius: 12px;
+  }
+}
+
+.know-section__bgimg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 49px;
+}
+
+.know-section__title {
+  color: var(--gtk-title-color);
+}
