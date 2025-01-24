@@ -23,8 +23,8 @@
   --pprn-btn-font-color: #ffffff;
   --pprn-btn-color: #000000;
   --build-title-color: #f2f2f2;
-  --build-img-color: #f2f2f2;
-  --build-imgp-color: #e0e0e0;
+  --build-img-color: red;
+  --build-imgp-color: red;
   --opinion-title-color: #f2f2f2;
   --opinion-name-color: #f2f2f2;
   --opinion-paragraph-color: #e0e0e0;
@@ -34,6 +34,8 @@
   --newsletter-subscribe-color: #333333;
   --newsletter-btn-color: #ffffff;
   --newsletter-color: #ffffff;
+  --newsletter-btnfont-color: #333333;
+  --newsletter-bg-color: #000000;
   --footer-title-color: #f2f2f2;
   --footer-p-color: #bdbdbd;
   --main-font-color: #f2f2f2;
@@ -432,6 +434,14 @@ body {
   margin-left: 100px;
 }
 
+.build__title {
+  width: 469px;
+  color: var(--build-title-color);
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 80px;
+}
+
 .build__list {
   display: flex;
   flex-direction: row;
@@ -441,4 +451,91 @@ body {
 .build__list-element {
   width: 362px;
   height: 542px;
+}
+
+.build__p-extrasection {
+  background-image: url(../img/build-photo1.jpg);
+  background-repeat: no-repeat;
+  width: 360px;
+  height: 542px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-left: 18px;
+  padding-bottom: 18px;
+}
+
+.build__ptitle {
+  color: var(--build-img-color);
+  font-size: 28px;
+  font-weight: normal;
+}
+
+.build__pplace {
+  color: var(--build-imgp-color);
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.client-opinion {
+  margin-top: 180px;
+}
+
+.client__title {
+  text-align: center;
+  color: var(--opinion-title-color);
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.newsletter {
+  text-align: center;
+  width: 1240px;
+  height: 320px;
+  padding-top: 44px;
+  margin: 0 auto;
+  margin-top: 180px;
+  background-color: var(--newsletter-color);
+  border-radius: 25px;
+}
+
+.newsletter__title {
+  font-size: 48px;
+  font-weight: normal;
+  color: var(--newsletter-title-color);
+}
+
+.newsletter__paragraph {
+  font-size: 18px;
+  font-weight: normal;
+  padding: 12px 387px 26px 386px;
+  color: var(--newsletter-p-color);
+}
+
+.newsletter__input {
+  width: 623px;
+  height: 72px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 226px;
+  margin: 26px auto 0;
+  background-color: var(--newsletter-bg-color);
+  border-radius: 18px;
+}
+
+.newsletter__email {
+  font-size: 18px;
+  font-weight: normal;
+  color: var(--newsletter-input-color);
+}
+
+.newsletter__button {
+  width: 146px;
+  height: 48px;
+  font-size: 18px;
+  font-weight: lighter;
+  border-radius: 12px;
+  color: var(--newsletter-btnfont-color);
 }
