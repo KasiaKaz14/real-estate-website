@@ -216,6 +216,13 @@ body {
   color: var(--header-blackbtn-color);
   background-color: var(--header-offer-color);
   border-radius: 6px;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    color: black;
+    background-color: white;
+  }
 }
 
 .gtk-section {
