@@ -486,6 +486,14 @@ body {
 
 .client-opinion {
   margin-top: 180px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.client__sections {
+  display: flex;
+  flex-direction: row;
+  gap: 155px;
 }
 
 .client__title {
@@ -493,6 +501,66 @@ body {
   color: var(--opinion-title-color);
   font-size: 48px;
   font-weight: bold;
+}
+
+.client__1photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 48px;
+  border-radius: 50%;
+}
+
+.client__name {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: 18px;
+  color: var(--opinion-name-color);
+}
+
+.client__origin {
+  text-align: center;
+  font-size: 18px;
+  font-weight: lighter;
+  margin-top: 4px;
+  color: var(--opinion-paragraph-color);
+}
+
+.client__p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 617px;
+  height: 120px;
+  font-size: 18px;
+  font-weight: normal;
+  margin: 0 auto;
+  margin-top: 43px;
+  color: var(--opinion-paragraph-color);
+}
+
+.client__right-list {
+  display: flex;
+  flex-direction: column;
+  gap: 75px;
+  margin-left: 20px;
+}
+
+.client__left-list {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.client__left-list-e img {
+  border-radius: 50%;
+}
+
+.client__right-list-e img {
+  border-radius: 50%;
 }
 
 .newsletter {
